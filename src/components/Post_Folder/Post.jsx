@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 
-const Post = ({name, postBody})=>{
+const Post = ({name, post})=>{
     return(
 <div>
     <h1>{name}</h1><br></br>
