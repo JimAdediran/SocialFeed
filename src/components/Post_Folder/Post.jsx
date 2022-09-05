@@ -1,16 +1,14 @@
 import React, {useState, useEffect} from "react";
 
-const Post = (props) =>{
-    return(
 
-<form action="" method="post">
-    <label for="name">Name </label>
-    <input type="text" name="name"></input><br></br>
-    <label for="post">Post </label>
-    <input type="text" name="post"></input>
-    <button>Create</button>
-</form>
+const Post = (props)=>{
+    return(
+<div>
+    <h1>"name"</h1><br></br>
+    <p>"Post</p><br></br>
+    <button>thumbsup</button><button>thumbsdown</button>
+</div>
     )
-};
+}
 
 export default Post;
