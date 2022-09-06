@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const Post = ({name, post})=>{
+const Post = (props)=>{
     return(
 <div>
-    <h1>{name}</h1><br></br>
-    <p>{post}</p><br></br>
-    <button>thumbsup</button><button>thumbsdown</button>
+    <div>{props.name}</div>
+    <div>{props.post}</div>
+    <button type="submit">thumbsup</button> <button type="submit">thumbdown</button>
 </div>
     )
 }

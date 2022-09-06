@@ -1,29 +1,29 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 
 const CreatePost = (props) =>{
-    const [name, setName] = useState()
-    const [post, setPost] = useState()
+    const [name, setName] = useState("")
+    const [post, setPost] = useState("")
 
     function handleSubmit(event){
         event.preventDefault();
-        let createdPost = {
+        let newPost = {
             name: name,
-            post: post
+            post: post,
         }
+        console.log(newPost)
+        props.createNewPost(newPost)
     }
-    addCreat4edPost(createdPost)
-    return
-}
+  
 
 return(
     <form onSubmit={handleSubmit}>
         <div>
             <label>name</label>
-            <input value={name} onChange={(event)=> setName(event.target.value)}/>
+            <input type="text" name="name" value={name} onChange={(event)=> setName(event.target.value)}/>
         </div>
         <div>
             <label>post</label>
-            <input value={name} onChange={(event)=> setName(event.target.value)}/>
+            <input type="text" name="post" value={post} onChange={(event)=> setPost(event.target.value)}/>
         </div>
         <div>
             <button type="submit">Create</button>
@@ -31,4 +31,6 @@ return(
     </form>
 
 )
+}
 
+export default CreatePost
