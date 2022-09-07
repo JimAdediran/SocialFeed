@@ -6,6 +6,7 @@ const Post = (props)=>{
 <div>
     <div>{props.name}</div>
     <div>{props.post}</div>
+    <div>{props.date}</div>
     <button type="submit">thumbsup</button> <button type="submit">thumbdown</button>
 </div>
     )

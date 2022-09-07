@@ -5,7 +5,7 @@ const DisplayPosts = (props) => {
     let feedPost = props.posts.map((post) => {
         return (
           <div>
-            <Post  name={post.name} post={post.post} />
+            <Post  name={post.name} post={post.post} date={post.date} />
             <hr/>
           </div>
         );
