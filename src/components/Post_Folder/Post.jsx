@@ -1,4 +1,5 @@
 import React from "react";
+import CustomButton from "../Button/Button"
 
 
 const Post = (props)=>{
@@ -7,7 +8,7 @@ const Post = (props)=>{
     <div>{props.name}</div>
     <div>{props.post}</div>
     <div>{props.date}</div>
-    <button type="submit">thumbsup</button> <button type="submit">thumbdown</button>
+    <CustomButton />
 </div>
     )
 }
