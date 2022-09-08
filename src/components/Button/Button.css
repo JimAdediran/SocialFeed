@@ -1,9 +1,10 @@
-.inactive{
-    color: grey
-}
 .dislikeactive{
     color: red
 }
 .likeactive{
     color: green
+}
+.button{
+    display: flex;
+    align-items: center;
 }

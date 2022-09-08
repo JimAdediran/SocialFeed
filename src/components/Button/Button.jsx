@@ -26,15 +26,15 @@ const Custombutton = (props) => {
       };
     
       return (
+        <div className="button" id = "button">
         <div>
-          <button className="likeinactive" type="button" onClick={likeHandleClick}>
-            
-          </button>
-          
-          <button className="dislikeinactive" type="button" onClick={dislikeHandleClick}>
-            
-          </button>
+            <button className={likePostButton} onClick={likeHandleClick} name="like" id="like">Like</button>
         </div>
+        <div>
+        <button className={dislikePostButton} onClick={dislikeHandleClick} name="dislike" id="dislike">DisLike</button>
+        </div>
+        </div>
+        
       );
     };
     
