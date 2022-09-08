@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./CreatePost.css"
 
 const CreatePost = (props) =>{
     const [name, setName] = useState("")
@@ -25,7 +26,7 @@ return(
         </div>
         <div>
             <label>post</label>
-            <input type="text" name="post" value={post} onChange={(event)=> setPost(event.target.value)}/>
+            <input type="text" className="inputBoxPost"  name="post" value={post} onChange={(event)=> setPost(event.target.value)}/>
         </div>
         <div>
             <label>date</label>

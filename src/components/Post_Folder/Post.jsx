@@ -1,12 +1,12 @@
 import React from "react";
 import CustomButton from "../Button/Button"
-
+import "./Post.css"
 
 const Post = (props)=>{
     return(
 <div>
     <div>{props.name}</div>
-    <div>{props.post}</div>
+    <div className="post">{props.post}</div>
     <div>{props.date}</div>
     <CustomButton />
 </div>
